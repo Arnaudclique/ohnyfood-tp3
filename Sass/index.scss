@@ -1,6 +1,7 @@
 @import "./Utils/variables";
 @import "./Layout/Acceuil/header";
 @import "./Layout/Acceuil/nav";
+@import "./Layout/Acceuil/main";
 
 @font-face {
   font-family: "Roboto";
@@ -16,6 +17,7 @@
   padding: 0;
   box-sizing: border-box;
   max-width: 415;
+  font-family: "Roboto";
 }
 
 p {
