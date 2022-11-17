@@ -1,0 +1,15 @@
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  header .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 18px 0 8px 0;
+  }
+  header .logo img {
+    height: 30px;
+  }

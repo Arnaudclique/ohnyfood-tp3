@@ -1,0 +1,304 @@
+@font-face {
+  font-family: "roboto";
+  src: url(/asset/fonts/Roboto-Regular.ttf);
+}
+@font-face {
+  font-family: "shrikhand";
+  src: url(/asset/fonts/Shrikhand-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  max-width: 415;
+  font-family: "Roboto";
+}
+
+p {
+  font-family: "Roboto";
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Shrikhand";
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.fonctionnement {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.fonctionnement__title {
+  margin-bottom: 30px;
+}
+.fonctionnement__number-nav {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 20;
+  border: 1px solid #9356dc;
+  background: #9356dc;
+  color: whitesmoke;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+.fonctionnement__content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: start;
+  gap: 30px;
+  margin-left: 30px;
+}
+.fonctionnement ul {
+  width: 100%;
+  margin: 0 0 0 30px;
+}
+.fonctionnement li {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: 0px solid #9356dc;
+  box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  width: 350px;
+  height: 70px;
+  margin-bottom: 20px;
+}
+
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 0px solid black;
+  width: 90%;
+  height: 70px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 18px -1px rgba(0, 0, 0, 0.15);
+  padding: 0 20px 0 10px;
+}
+.menu li__dessert__price {
+  font-size: large;
+}
+.menu li__dessert__price h3 {
+  font-family: "roboto", sans-serif;
+  font-weight: 550;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 87%;
+  border: 0px solid rgba(128, 128, 128, 0.285);
+  box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.285);
+  border-radius: 10px;
+  margin-bottom: 20px;
+  margin-left: 25px;
+  min-height: 280px;
+}
+.card__img {
+  background: url(/asset/pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center;
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card__img2 {
+  background: url(/asset/pictures/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat center;
+  background-size: 100%;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card__img3 {
+  background: url(/asset/pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat center;
+  background-size: 100%;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card__img4 {
+  background: url(/asset/pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat center;
+  background-size: 100%;
+  height: 200px;
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 25px;
+  margin: 20px 0 -20px 20px;
+}
+.card__thumbnail {
+  position: relative;
+  border: 1px solid rgba(128, 128, 128, 0.285);
+  background: #99e2d0;
+  top: -238px;
+  left: 241px;
+  padding: 5px 10px;
+  color: rgb(0, 168, 98);
+  font-weight: 400;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+header .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 18px 0 8px 0;
+}
+
+header .logo img {
+  height: 30px;
+}
+
+footer {
+  background: rgb(79, 79, 79);
+  width: 100%;
+}
+footer .footer-logo img {
+  filter: invert(100%);
+  height: 17px;
+  margin: 20px;
+}
+footer .contact {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  line-height: 25px;
+  margin: 0px 0 20px 20px;
+}
+footer a {
+  color: whitesmoke;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: start;
+}
+footer a i {
+  margin-right: 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background: rgb(252, 250, 250) no-repeat center center fixed;
+  background-size: 100%;
+  width: 100%;
+  margin-left: 0;
+}
+
+main .location {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  background: rgba(181, 180, 180, 0.285);
+  border-top: 2px solid rgba(128, 128, 128, 0.285);
+  width: 100%;
+  height: 60px;
+}
+
+main .location i {
+  margin-right: 20px;
+}
+
+main .discovery {
+  width: 80%;
+  display: flex;
+  gap: 24px;
+  margin: 0 auto;
+  margin-top: 32px;
+  margin-bottom: 49px;
+  flex-direction: column;
+  text-align: center;
+}
+
+main .discovery h2 {
+  width: 100%;
+}
+
+main .discovery a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  border: 1px solid rgba(128, 128, 128, 0.285);
+  background: linear-gradient(354deg, rgb(202, 86, 220) 35%, rgb(236, 209, 209) 98%);
+  border-radius: 50px;
+  height: 50px;
+  width: 70%;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+main {
+  background: none;
+}
+main .background-top {
+  background: url(./asset/pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 235px;
+}
+main h1 {
+  font-size: 1.5rem;
+  margin-bottom: 25px;
+}
+main .menu {
+  display: flex;
+  flex-direction: column;
+  background: white;
+  width: 100%;
+  margin-left: 15px;
+}
+main .menu__title {
+  margin: 10px 0 10px 0;
+}
+main .menu__title::after {
+  content: "";
+  display: block;
+  width: 10%;
+  height: 3px;
+  background: #99e2d0;
+  margin-top: 4px;
+}
+main .menu::after {
+  content: "";
+  display: block;
+  border-top: 30px solid white;
+  margin: 0 auto;
+  width: 100%;
+  top: 267px;
+  left: 0;
+  position: absolute;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+}/*# sourceMappingURL=main.css.map */

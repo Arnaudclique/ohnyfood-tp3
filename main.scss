@@ -1,0 +1,27 @@
+// Variables
+
+@import "./sass/utils/variable";
+
+// Mixins
+
+@import "./sass/utils/mixins";
+
+// Settigs
+
+@import "./sass/utils/settings";
+
+// Components
+
+@import "./sass/components/menu-selections";
+@import "./sass/components/buttons";
+@import "./sass/components/cards";
+
+// Layout
+
+@import "./sass/layout/header";
+@import "./sass/layout/footer";
+
+// Pages
+
+@import "./sass/pages/home";
+@import "./sass/pages/lapalettedugout";
