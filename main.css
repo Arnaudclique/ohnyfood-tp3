@@ -14,6 +14,10 @@
   font-family: "Roboto";
 }
 
+body {
+  width: 100%;
+}
+
 p {
   font-family: "Roboto";
 }
@@ -38,6 +42,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  margin-left: 20px;
 }
 .fonctionnement__title {
   margin-bottom: 30px;
@@ -47,7 +52,7 @@ a {
   display: flex;
   justify-content: center;
   align-items: center;
-  left: 20;
+  left: 10;
   border: 1px solid #9356dc;
   background: #9356dc;
   color: whitesmoke;
@@ -65,7 +70,6 @@ a {
 }
 .fonctionnement ul {
   width: 100%;
-  margin: 0 0 0 30px;
 }
 .fonctionnement li {
   display: flex;
@@ -79,39 +83,37 @@ a {
   margin-bottom: 20px;
 }
 
-.menu li {
+.button a {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  border: 0px solid black;
-  width: 90%;
-  height: 70px;
-  margin-bottom: 10px;
-  border-radius: 10px;
-  box-shadow: 4px 4px 18px -1px rgba(0, 0, 0, 0.15);
-  padding: 0 20px 0 10px;
+  color: whitesmoke;
+  border: 1px solid rgba(128, 128, 128, 0.285);
+  background: linear-gradient(354deg, rgb(202, 86, 220) 35%, rgb(236, 209, 209) 98%);
+  border-radius: 50px;
+  height: 50px;
+  width: 100%;
+  margin: 0 auto;
+  cursor: pointer;
+  box-shadow: 1px 0px 9px 2px rgba(128, 128, 128, 0.28);
 }
-.menu li__dessert__price {
-  font-size: large;
-}
-.menu li__dessert__price h3 {
-  font-family: "roboto", sans-serif;
-  font-weight: 550;
+.button a:hover {
+  opacity: 0.8;
 }
 
-.card {
+.card__container .card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  width: 87%;
+  width: 145%;
   border: 0px solid rgba(128, 128, 128, 0.285);
   box-shadow: 1px 1px 5px 1px rgba(128, 128, 128, 0.285);
   border-radius: 10px;
   margin-bottom: 20px;
-  margin-left: 25px;
+  margin-left: 20px;
   min-height: 280px;
 }
-.card__img {
+.card__container .card__img {
   background: url(/asset/pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center;
   background-size: cover;
   height: 200px;
@@ -119,7 +121,7 @@ a {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.card__img2 {
+.card__container .card__img2 {
   background: url(/asset/pictures/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat center;
   background-size: 100%;
   height: 200px;
@@ -127,7 +129,7 @@ a {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.card__img3 {
+.card__container .card__img3 {
   background: url(/asset/pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat center;
   background-size: 100%;
   height: 200px;
@@ -135,7 +137,7 @@ a {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.card__img4 {
+.card__container .card__img4 {
   background: url(/asset/pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat center;
   background-size: 100%;
   height: 200px;
@@ -143,14 +145,14 @@ a {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
 }
-.card__content {
+.card__container .card__content {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   line-height: 25px;
   margin: 20px 0 -20px 20px;
 }
-.card__thumbnail {
+.card__container .card__thumbnail {
   position: relative;
   border: 1px solid rgba(128, 128, 128, 0.285);
   background: #99e2d0;
@@ -161,22 +163,61 @@ a {
   font-weight: 400;
 }
 
+.menu li {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  border: 0px solid black;
+  width: 90%;
+  height: 70px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 18px -1px rgba(0, 0, 0, 0.15);
+  padding: 0 20px 15px 10px;
+}
+.menu li h3 {
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.9rem;
+  margin-bottom: 2px;
+}
+.menu li p {
+  font-family: "roboto", sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+.menu li h4 {
+  font-family: "roboto", sans-serif;
+  font-weight: 600;
+  font-size: 0.8rem;
+}
+
 header {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   text-align: center;
+  align-items: center;
 }
 
 header .logo {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 18px 0 8px 0;
+  margin: 16px auto;
 }
 
 header .logo img {
-  height: 30px;
+  height: 28px;
+}
+
+header .return-home i {
+  padding-left: 20px;
+  margin-right: -20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+header .return-home i:hover {
+  transform: scale(1.5);
 }
 
 footer {
@@ -214,13 +255,15 @@ main {
   width: 100%;
   margin-left: 0;
 }
+main h2 {
+  margin-left: 20px;
+}
 
 main .location {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   background: rgba(181, 180, 180, 0.285);
   border-top: 2px solid rgba(128, 128, 128, 0.285);
   width: 100%;
@@ -234,7 +277,6 @@ main .location i {
 main .discovery {
   width: 80%;
   display: flex;
-  gap: 24px;
   margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 49px;
@@ -246,25 +288,38 @@ main .discovery h2 {
   width: 100%;
 }
 
-main .discovery a {
+main .discovery .button a {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: whitesmoke;
-  border: 1px solid rgba(128, 128, 128, 0.285);
-  background: linear-gradient(354deg, rgb(202, 86, 220) 35%, rgb(236, 209, 209) 98%);
-  border-radius: 50px;
+  width: 80%;
   height: 50px;
-  width: 70%;
-  margin: 0 auto;
-  cursor: pointer;
+}
+
+.card__container h2 {
+  margin: 20px;
 }
 
 main {
   background: none;
 }
-main .background-top {
+main .background-top-lapalette {
   background: url(./asset/pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 235px;
+}
+main .background-top-lanote {
+  background: url(/asset/pictures/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 235px;
+}
+main .background-top-lafrancaise {
+  background: url(/asset/pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat center/cover;
+  width: 100%;
+  height: 235px;
+}
+main .background-top-ledelice {
+  background: url(/asset/pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat center/cover;
   width: 100%;
   height: 235px;
 }
@@ -275,6 +330,7 @@ main h1 {
 main .menu {
   display: flex;
   flex-direction: column;
+  align-items: stretch;
   background: white;
   width: 100%;
   margin-left: 15px;
@@ -301,4 +357,12 @@ main .menu::after {
   position: absolute;
   border-top-left-radius: 30px;
   border-top-right-radius: 30px;
+}
+main .button a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 140px;
+  height: 40px;
+  margin: 20px auto;
 }/*# sourceMappingURL=main.css.map */

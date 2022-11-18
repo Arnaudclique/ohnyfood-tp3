@@ -6,6 +6,10 @@ main {
   background-size: 100%;
   width: 100%;
   margin-left: 0;
+
+  h2 {
+    margin-left: 20px;
+  }
 }
 
 main .location {
@@ -13,7 +17,6 @@ main .location {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
   background: rgba(181, 180, 180, 0.285);
   border-top: 2px solid rgba(128, 128, 128, 0.285);
   width: 100%;
@@ -26,7 +29,6 @@ main .location i {
 main .discovery {
   width: 80%;
   display: flex;
-  gap: 24px;
   margin: 0 auto;
   margin-top: 32px;
   margin-bottom: 49px;
@@ -36,16 +38,15 @@ main .discovery {
 main .discovery h2 {
   width: 100%;
 }
-main .discovery a {
+main .discovery .button a{
   display: flex;
   justify-content: center;
   align-items: center;
-  color: whitesmoke;
-  border: 1px solid rgba(128, 128, 128, 0.285);
-  background: $color-gradient;
-  border-radius: 50px;
+  width: 80%;
   height: 50px;
-  width: 70%;
-  margin: 0 auto;
-  cursor: pointer;
 }
+.card__container h2 {
+  margin: 20px;
+
+}
+
