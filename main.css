@@ -330,6 +330,19 @@ section {
   justify-content: center;
   mix-blend-mode: lighten;
 }
+.menu__like__main {
+  transition-duration: 0.25s;
+  background: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  mix-blend-mode: lighten;
+}
 .menu__btn:hover .menu__like--noBg {
   opacity: 0;
 }
@@ -415,12 +428,11 @@ section {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-left: 20px;
   width: 100%;
-  margin: 30px 0 30px 0;
+  margin: 30px auto;
 }
 .fonctionnement__title {
-  margin: 0 0 30px 30px;
+  margin: 30 auto;
 }
 .fonctionnement__number-nav {
   position: relative;
@@ -607,22 +619,22 @@ main .discovery .button a {
 }
 
 main .background-top-lapalette {
-  background: url(./asset/pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center/cover;
+  background: url(/asset/pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg) no-repeat center/cover;
   width: 100%;
   height: 435px;
 }
 main .background-top-lanote {
   background: url(/asset/pictures/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg) no-repeat center/cover;
   width: 100%;
-  height: 235px;
+  height: 435px;
 }
 main .background-top-lafrancaise {
   background: url(/asset/pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg) no-repeat center/cover;
   width: 100%;
-  height: 235;
+  height: 435px;
 }
 main .background-top-ledelice {
   background: url(/asset/pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg) no-repeat center/cover;
   width: 100%;
-  height: 235px;
+  height: 435px;
 }/*# sourceMappingURL=main.css.map */

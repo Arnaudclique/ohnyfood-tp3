@@ -66,6 +66,19 @@
     justify-content: center;
     mix-blend-mode: lighten;
   }
+  &__like__main {
+    transition-duration: 0.25s;
+    background: #ffffff;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+  }
 
   &__btn:hover {
     .menu__like {
