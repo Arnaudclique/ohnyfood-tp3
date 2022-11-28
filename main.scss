@@ -4,7 +4,7 @@
 
 // Mixins
 
-@import "./sass/utils/mixins";
+@import "./sass/utils/animation";
 
 // Settigs
 
@@ -12,10 +12,10 @@
 
 // Components
 
-@import "./sass/components/menu-selections";
+@import "./sass/components/menu-selection";
 @import "./sass/components/buttons";
 @import "./sass/components/cards";
-@import "./sass/components/menu-details";
+@import "./sass/components/menu-restaurant";
 
 // Layout
 

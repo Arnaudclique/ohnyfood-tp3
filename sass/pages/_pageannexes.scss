@@ -1,11 +1,10 @@
 main {
-  background: none;
 
   .background-top-lapalette {
     background: url(./asset/pictures/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg)
       no-repeat center/cover;
     width: 100%;
-    height: 235px;
+    height: 435px;
   }
   .background-top-lanote {
     background: url(/asset/pictures/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg)
@@ -17,7 +16,7 @@ main {
     background: url(/asset/pictures/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg)
       no-repeat center/cover;
     width: 100%;
-    height: 235px;
+    height: 235;
   }
   .background-top-ledelice {
     background: url(/asset/pictures/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg)
@@ -26,52 +25,4 @@ main {
     height: 235px;
   }
 
-  h1 {
-    font-size: 1.5rem;
-    margin-bottom: 25px;
-  }
-
-  .menu {
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    background: white;
-    width: 100%;
-    margin-left: 15px;
-
-    &__title {
-      margin: 10px 0 10px 0;
-
-      &::after {
-        content: "";
-        display: block;
-        width: 10%;
-        height: 3px;
-        background: $color-tertiary;
-        margin-top: 4px;
-      }
-    }
-
-    &::after {
-      content: "";
-      display: block;
-      border-top: 30px solid white;
-      margin: 0 auto;
-      width: 100%;
-      top: 267px;
-      left: 0;
-      position: absolute;
-      border-top-left-radius: 30px;
-      border-top-right-radius: 30px;
-    }
-  }
-  .button a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 140px;
-    height: 40px;
-    margin: 20px auto;
-    
-  }
 }

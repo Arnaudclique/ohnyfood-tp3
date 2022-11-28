@@ -8,12 +8,70 @@
   background: $color-gradient;
   border-radius: 50px;
   height: 50px;
-  width: 100%;
   margin: 0 auto;
   cursor: pointer;
   box-shadow: 1px 0px 9px 2px rgb(128 128 128 / 28%);
 
   &:hover {
     opacity: 0.8;
+  }
+}
+
+.menu {
+  &__btn {
+    border-image: none;
+    height: 2rem;
+    width: 2rem;
+    background-color: transparent;
+    border: transparent 0px solid;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    background-color: black;
+
+    &:hover::before {
+      opacity: 1;
+    }
+
+    &::before {
+      opacity: 0;
+      transition: 0.5s;
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      background: linear-gradient(
+        0deg,
+        $color-primary 0%,
+        $color-secondary 100%
+      );
+    }
+  }
+
+  &__like {
+    transition-duration: 0.25s;
+    background: #f6f6f6;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    mix-blend-mode: lighten;
+  }
+
+  &__btn:hover {
+    .menu__like {
+      &--noBg {
+        opacity: 0;
+      }
+    }
   }
 }
